@@ -1,0 +1,275 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fcff;
+    color: #103b70;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5%;
+    min-height: 65px;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.logo h2 {
+    font-size: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #103b70;
+    font-size: 13px;
+    padding-bottom: 7px;
+}
+
+.nav a.active {
+    color: #ff7518;
+    border-bottom: 2px solid #ff7518;
+}
+
+.signin {
+    padding: 8px 18px;
+    color: #ff7518;
+    background-color: white;
+    border: 1px solid #ff7518;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner {
+    min-height: 185px;
+    display: flex;
+    align-items: center;
+    padding: 30px 5%;
+    background: linear-gradient(110deg, #edf7ff, #dcefff);
+}
+
+.banner-content {
+    max-width: 480px;
+}
+
+.orange {
+    color: #ff7518;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.banner h1 {
+    color: #103b70;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.banner h1 span {
+    color: #ff7518;
+}
+
+.description {
+    color: #6382a6;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr;
+    gap: 20px;
+    padding: 30px 5% 45px;
+}
+
+.contact-info {
+    padding: 22px;
+    background: linear-gradient(120deg, #f0f8ff, #e8f4ff);
+    border: 1px solid #d9eafa;
+    border-radius: 7px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.intro {
+    color: #6382a6;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.info-item {
+    margin-top: 22px;
+}
+
+.info-item h4 {
+    color: #ff7518;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    color: #6382a6;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+.contact-form {
+    padding: 22px;
+    background-color: white;
+    border: 1px solid #d9eafa;
+    border-radius: 7px;
+}
+
+.contact-form .intro {
+    margin-bottom: 15px;
+}
+
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    color: #103b70;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 11px;
+    color: #103b70;
+    background-color: white;
+    border: 1px solid #d5e7fa;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group input,
+.form-group select {
+    height: 38px;
+}
+
+.form-group textarea {
+    height: 75px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #6bb5f5;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9aafc8;
+}
+
+.full-width {
+    width: 100%;
+}
+
+
+.send-button {
+    width: 100%;
+    padding: 11px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #ff7518;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #ed650b;
+}
+
+
+@media (max-width: 700px) {
+
+    .header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav {
+        gap: 15px;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .header {
+        justify-content: center;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 16px;
+    }
+}
+
