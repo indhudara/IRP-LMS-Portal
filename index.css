@@ -11,7 +11,7 @@ body {
     background-color: #f8fcff;
 }
 
-/* Navigation bar */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -62,7 +62,7 @@ body {
     cursor: pointer;
 }
 
-/* Hero section */
+
 .main {
     min-height: 285px;
     padding: 40px 5%;
@@ -85,7 +85,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Orange tagline */
 .orange {
     color: #ff7518;
 }
@@ -98,7 +97,6 @@ body {
     margin-bottom: 12px;
 }
 
-/* Main heading */
 .heading {
     color: #103b70;
 }
@@ -114,14 +112,13 @@ body {
     color: #ff7518;
 }
 
-/* Description */
 .blue {
     color: #6382a6;
     font-size: 13px;
     line-height: 1.7;
 }
 
-/* Explore button */
+
 .button {
     margin-top: 18px;
 }
@@ -136,7 +133,7 @@ body {
     font-size: 13px;
 }
 
-/* Learning journey heading */
+
 section:not(.cards) {
     padding: 22px 5% 0;
     background-color: #f8fcff;
@@ -152,7 +149,7 @@ section:not(.cards) .blue {
     margin-bottom: 20px;
 }
 
-/* Five cards */
+
 .cards {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -184,37 +181,4 @@ section:not(.cards) .blue {
     line-height: 1.6;
 }
 
-/* Responsive design */
-@media (max-width: 800px) {
-    .header {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .nav {
-        gap: 15px;
-    }
-
-    .cards {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .main .heading {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 500px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .main {
-        padding: 30px 5%;
-    }
-
-    .main .heading {
-        font-size: 27px;
-    }
-}
 
